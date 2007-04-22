@@ -1,6 +1,6 @@
 Name: x11-driver-video
 Version: 1.0.0
-Release: %mkrel 7
+Release: %mkrel 8
 Summary: X11 video drivers
 Group: System/X11
 License: GPL
@@ -19,7 +19,7 @@ Requires: x11-driver-video-fbdev
 Requires: x11-driver-video-glint
 Requires: x11-driver-video-i128
 Requires: x11-driver-video-i740
-Requires: x11-driver-video-i810
+Requires: x11-driver-video-intel
 Requires: x11-driver-video-imstt
 Requires: x11-driver-video-mga
 Requires: x11-driver-video-neomagic
