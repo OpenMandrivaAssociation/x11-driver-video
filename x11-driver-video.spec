@@ -19,7 +19,9 @@ Requires: x11-driver-video-fbdev
 Requires: x11-driver-video-glint
 Requires: x11-driver-video-i128
 Requires: x11-driver-video-i740
+%ifnarch %{sunsparc}
 Requires: x11-driver-video-intel
+%endif
 Requires: x11-driver-video-imstt
 Requires: x11-driver-video-mga
 Requires: x11-driver-video-neomagic
