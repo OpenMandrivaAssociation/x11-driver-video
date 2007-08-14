@@ -1,6 +1,6 @@
 Name: x11-driver-video
 Version: 1.0.0
-Release: %mkrel 8
+Release: %mkrel 6
 Summary: X11 video drivers
 Group: System/X11
 License: GPL
@@ -11,6 +11,7 @@ Requires: x11-driver-video-amd
 %endif
 Requires: x11-driver-video-ark
 Requires: x11-driver-video-ati
+Requires: x11-driver-video-avivo
 Requires: x11-driver-video-chips
 Requires: x11-driver-video-cirrus
 Requires: x11-driver-video-cyrix
