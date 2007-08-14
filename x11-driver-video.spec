@@ -1,6 +1,6 @@
 Name: x11-driver-video
 Version: 1.0.0
-Release: %mkrel 6
+Release: %mkrel 9
 Summary: X11 video drivers
 Group: System/X11
 License: GPL
