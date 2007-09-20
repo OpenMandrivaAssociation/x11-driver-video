@@ -1,6 +1,6 @@
 Name:		x11-driver-video
 Version:	1.0.0
-Release:	%mkrel 10
+Release:	%mkrel 11
 Summary:	X11 video drivers
 Group:		System/X11
 License:	MIT
@@ -30,6 +30,7 @@ Requires:	x11-driver-video-newport
 Requires:	x11-driver-video-nsc
 Requires:	x11-driver-video-nv
 Requires:	x11-driver-video-openchrome
+Requires:	x11-driver-video-radeonhd
 Requires:	x11-driver-video-rendition
 Requires:	x11-driver-video-s3
 Requires:	x11-driver-video-s3virge
