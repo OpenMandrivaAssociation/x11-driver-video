@@ -11,7 +11,6 @@ Requires:	x11-driver-video-amd
 %endif
 Requires:	x11-driver-video-ark
 Requires:	x11-driver-video-ati
-Requires:	x11-driver-video-avivo
 Requires:	x11-driver-video-chips
 Requires:	x11-driver-video-cirrus
 Requires:	x11-driver-video-cyrix
