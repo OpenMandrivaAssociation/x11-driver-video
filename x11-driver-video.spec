@@ -9,6 +9,7 @@ Version:	1.0.0
 Release:	%mkrel 13
 Summary:	X11 video drivers
 Group:		System/X11
+BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 License:	MIT
 
 Requires:	x11-driver-video-apm
