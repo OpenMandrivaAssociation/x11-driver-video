@@ -6,7 +6,7 @@
 
 Name:		x11-driver-video
 Version:	1.0.0
-Release:	%mkrel 14
+Release:	%mkrel 15
 Summary:	X11 video drivers
 Group:		System/X11
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
@@ -30,6 +30,7 @@ Requires:	x11-driver-video-nsc
 Requires:	x11-driver-video-nv
 Requires:	x11-driver-video-openchrome
 Requires:	x11-driver-video-radeonhd
+Requires:	x11-driver-video-s3
 Requires:	x11-driver-video-s3virge
 Requires:	x11-driver-video-savage
 Requires:	x11-driver-video-sis
@@ -83,7 +84,6 @@ Requires:	x11-driver-video-imstt
 Requires:	x11-driver-video-newport
 
 Requires:	x11-driver-video-rendition
-Requires:	x11-driver-video-s3
 Requires:	x11-driver-video-siliconmotion
 
 # DEC Tga - too uncommon to be installed by default
