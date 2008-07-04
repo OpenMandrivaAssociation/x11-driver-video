@@ -6,7 +6,7 @@
 
 Name:		x11-driver-video
 Version:	1.0.0
-Release:	%mkrel 16
+Release:	%mkrel 17
 Summary:	X11 video drivers
 Group:		System/X11
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
@@ -16,6 +16,8 @@ License:	MIT
 Requires:	x11-driver-video-amd
 %endif
 Requires:	x11-driver-video-ati
+# useful for qemu
+Requires:	x11-driver-video-cirrus
 Requires:	x11-driver-video-fbdev
 Requires:	x11-driver-video-glint
 %ifarch %{ix86}
@@ -72,7 +74,6 @@ depends on uncommon free X.org video drivers.
 Requires:	x11-driver-video-apm
 Requires:	x11-driver-video-ark
 Requires:	x11-driver-video-chips
-Requires:	x11-driver-video-cirrus
 Requires:	x11-driver-video-cyrix
 
 # Probably only required for development/experiments
