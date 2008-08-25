@@ -6,7 +6,7 @@
 
 Name:		x11-driver-video
 Version:	1.0.0
-Release:	%mkrel 19
+Release:	%mkrel 20
 Summary:	X11 video drivers
 Group:		System/X11
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
@@ -38,7 +38,7 @@ Requires:	x11-driver-video-s3
 Requires:	x11-driver-video-s3virge
 Requires:	x11-driver-video-savage
 Requires:	x11-driver-video-sis
-Requires:	x11-driver-video-sis-imedia
+Requires:	x11-driver-video-sisimedia
 Requires:	x11-driver-video-sisusb
 %ifarch %{sunsparc}
 Requires:	x11-driver-video-sunbw2
