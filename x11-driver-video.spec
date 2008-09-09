@@ -6,7 +6,7 @@
 
 Name:		x11-driver-video
 Version:	1.0.0
-Release:	%mkrel 21
+Release:	%mkrel 22
 Summary:	X11 video drivers
 Group:		System/X11
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
@@ -53,7 +53,6 @@ Requires:	x11-driver-video-tdfx
 Requires:	x11-driver-video-trident
 Requires:	x11-driver-video-v4l
 Requires:	x11-driver-video-vesa
-Requires:	x11-driver-video-vboxvideo
 Requires:	x11-driver-video-vga
 Requires:	x11-driver-video-vmware
 
