@@ -6,7 +6,7 @@
 
 Name:		x11-driver-video
 Version:	1.0.0
-Release:	%mkrel 23
+Release:	%mkrel 24
 Summary:	X11 video drivers
 Group:		System/X11
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
@@ -24,6 +24,8 @@ Requires:	x11-driver-video-glint
 Requires:	x11-driver-video-geode
 %endif
 %ifnarch %{sunsparc}
+# (tv) for early i810:
+Requires:	x11-driver-video-i810
 Requires:	x11-driver-video-intel
 %endif
 Requires:	x11-driver-video-mach64
