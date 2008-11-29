@@ -6,7 +6,7 @@
 
 Name:		x11-driver-video
 Version:	1.0.0
-Release:	%mkrel 27
+Release:	%mkrel 28
 Summary:	X11 video drivers
 Group:		System/X11
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
@@ -73,14 +73,12 @@ depends on uncommon free X.org video drivers.
 Requires:	x11-driver-video-apm
 Requires:	x11-driver-video-ark
 Requires:	x11-driver-video-chips
-Requires:	x11-driver-video-cyrix
 
 # Probably only required for development/experiments
 Requires:	x11-driver-video-dummy
 
 Requires:	x11-driver-video-i128
 Requires:	x11-driver-video-i740
-Requires:	x11-driver-video-imstt
 
 # SGI newport - too uncommon to be installed by default
 Requires:	x11-driver-video-newport
@@ -91,9 +89,6 @@ Requires:	x11-driver-video-siliconmotion
 # DEC Tga - too uncommon to be installed by default
 Requires:	x11-driver-video-tga
 Requires:	x11-driver-video-tseng
-
-# Openchrome should make these obsolete
-Requires:	x11-driver-video-viaarena
 
 # Too old hardware - should not be installed by default
 Requires:	x11-driver-video-voodoo
