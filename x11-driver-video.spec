@@ -6,7 +6,7 @@
 
 Name:		x11-driver-video
 Version:	1.0.0
-Release:	%mkrel 25
+Release:	%mkrel 26
 Summary:	X11 video drivers
 Group:		System/X11
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
@@ -28,7 +28,6 @@ Requires:	x11-driver-video-intel
 Requires:	x11-driver-video-mach64
 Requires:	x11-driver-video-mga
 Requires:	x11-driver-video-neomagic
-Requires:	x11-driver-video-nsc
 Requires:	x11-driver-video-nv
 Requires:	x11-driver-video-openchrome
 Requires:	x11-driver-video-radeonhd
