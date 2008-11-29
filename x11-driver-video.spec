@@ -6,7 +6,7 @@
 
 Name:		x11-driver-video
 Version:	1.0.0
-Release:	%mkrel 26
+Release:	%mkrel 27
 Summary:	X11 video drivers
 Group:		System/X11
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
@@ -52,8 +52,6 @@ Requires:	x11-driver-video-trident
 Requires:	x11-driver-video-v4l
 Requires:	x11-driver-video-vesa
 Requires:	x11-driver-video-vga
-# Openchrome should make this one obsolete
-Requires:	x11-driver-video-via
 Requires:	x11-driver-video-vmware
 
 %description
