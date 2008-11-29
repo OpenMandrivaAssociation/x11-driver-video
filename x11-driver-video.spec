@@ -6,15 +6,12 @@
 
 Name:		x11-driver-video
 Version:	1.0.0
-Release:	%mkrel 24
+Release:	%mkrel 25
 Summary:	X11 video drivers
 Group:		System/X11
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 License:	MIT
 
-%ifarch %{ix86}
-Requires:	x11-driver-video-amd
-%endif
 Requires:	x11-driver-video-ati
 # useful for qemu
 Requires:	x11-driver-video-cirrus
