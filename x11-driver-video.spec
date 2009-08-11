@@ -6,7 +6,7 @@
 
 Name:		x11-driver-video
 Version:	1.0.0
-Release:	%mkrel 28
+Release:	%mkrel 29
 Summary:	X11 video drivers
 Group:		System/X11
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
@@ -65,11 +65,6 @@ depends on most common free X.org video drivers.
 Summary:	Uncommon X11 video drivers
 Group:		System/X11
 License:	MIT
-
-%description uncommon
-X11 video drivers metapackage. This package contains no files, but
-depends on uncommon free X.org video drivers.
-
 Requires:	x11-driver-video-apm
 Requires:	x11-driver-video-ark
 Requires:	x11-driver-video-chips
@@ -92,6 +87,10 @@ Requires:	x11-driver-video-tseng
 
 # Too old hardware - should not be installed by default
 Requires:	x11-driver-video-voodoo
+
+%description uncommon
+X11 video drivers metapackage. This package contains no files, but
+depends on uncommon free X.org video drivers.
 
 %files uncommon
 %defattr(-,root,root)
