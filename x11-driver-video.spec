@@ -6,7 +6,7 @@
 
 Name:		x11-driver-video
 Version:	1.0.0
-Release:	%mkrel 32
+Release:	%mkrel 33
 Summary:	X11 video drivers
 Group:		System/X11
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
@@ -85,6 +85,11 @@ Requires:	x11-driver-video-tseng
 
 # Too old hardware - should not be installed by default
 Requires:	x11-driver-video-voodoo
+
+# Stuff in contrib or recent drivers that nobody might be using:
+Requires:	x11-driver-video-xgi
+Requires:	x11-driver-video-xgixp
+Requires:	x11-driver-video-qxl
 
 %description uncommon
 X11 video drivers metapackage. This package contains no files, but
