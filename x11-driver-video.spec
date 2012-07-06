@@ -1,6 +1,6 @@
 #
 # Needs more fixes, maybe remove all drivers for non agp/pci cards
-# sunsparc arch may need more drivers removed, or even better, only
+# sparcx arch may need more drivers removed, or even better, only
 # install sun hardware drivers
 #
 
@@ -20,7 +20,7 @@ Requires:	x11-driver-video-glint
 %ifarch %{ix86}
 Requires:	x11-driver-video-geode
 %endif
-%ifnarch %{sunsparc}
+%ifnarch %{sparcx}
 Requires:	x11-driver-video-intel
 %endif
 Requires:	x11-driver-video-mach64
@@ -37,7 +37,7 @@ Requires:	x11-driver-video-savage
 Requires:	x11-driver-video-sis
 Requires:	x11-driver-video-sisimedia
 Requires:	x11-driver-video-sisusb
-%ifarch %{sunsparc}
+%ifarch %{sparcx}
 Requires:	x11-driver-video-sunbw2
 Requires:	x11-driver-video-suncg14
 Requires:	x11-driver-video-suncg3
