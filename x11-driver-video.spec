@@ -6,10 +6,9 @@
 
 Name:		x11-driver-video
 Version:	1.0.0
-Release:	%mkrel 35
+Release:	35
 Summary:	X11 video drivers
 Group:		System/X11
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 License:	MIT
 
 Requires:	x11-driver-video-ati
@@ -59,7 +58,7 @@ depends on most common free X.org video drivers.
 %files
 %defattr(-,root,root)
 
-%package uncommon
+%package	uncommon
 Summary:	Uncommon X11 video drivers
 Group:		System/X11
 License:	MIT
@@ -91,9 +90,8 @@ Requires:	x11-driver-video-xgi
 Requires:	x11-driver-video-xgixp
 Requires:	x11-driver-video-qxl
 
-%description uncommon
+%description	uncommon
 X11 video drivers metapackage. This package contains no files, but
 depends on uncommon free X.org video drivers.
 
-%files uncommon
-%defattr(-,root,root)
+%files	uncommon
