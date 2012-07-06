@@ -6,7 +6,7 @@
 
 Name:		x11-driver-video
 Version:	1.0.0
-Release:	35
+Release:	36
 Summary:	X11 video drivers
 Group:		System/X11
 License:	MIT
@@ -56,7 +56,6 @@ X11 video drivers metapackage. This package contains no files, but
 depends on most common free X.org video drivers.
 
 %files
-%defattr(-,root,root)
 
 %package	uncommon
 Summary:	Uncommon X11 video drivers
@@ -94,4 +93,4 @@ Requires:	x11-driver-video-qxl
 X11 video drivers metapackage. This package contains no files, but
 depends on uncommon free X.org video drivers.
 
-%files	uncommon
+%files		uncommon
