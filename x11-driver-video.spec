@@ -21,11 +21,11 @@ Requires:	x11-driver-video-geode
 %endif
 %ifnarch %{sunsparc} %{arm}
 Requires:	x11-driver-video-intel
+Requires:	x11-driver-video-nouveau
 %endif
 Requires:	x11-driver-video-mach64
 Requires:	x11-driver-video-mga
 Requires:	x11-driver-video-neomagic
-Requires:	x11-driver-video-nouveau
 Requires:	x11-driver-video-nv
 Requires:	x11-driver-video-openchrome
 Requires:	x11-driver-video-r128
