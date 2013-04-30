@@ -6,10 +6,9 @@
 
 Name:		x11-driver-video
 Version:	1.0.0
-Release:	40
+Release:	41
 Summary:	X11 video drivers
 Group:		System/X11
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 License:	MIT
 
 Requires:	x11-driver-video-ati
@@ -20,7 +19,7 @@ Requires:	x11-driver-video-glint
 %ifarch %{ix86}
 Requires:	x11-driver-video-geode
 %endif
-%ifnarch %{sunsparc}
+%ifnarch %{sunsparc} %{arm}
 Requires:	x11-driver-video-intel
 %endif
 Requires:	x11-driver-video-mach64
