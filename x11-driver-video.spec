@@ -6,7 +6,7 @@
 
 Name:		x11-driver-video
 Version:	1.0.0
-Release:	44
+Release:	45
 Summary:	X11 video drivers
 Group:		System/X11
 License:	MIT
