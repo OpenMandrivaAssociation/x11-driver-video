@@ -49,7 +49,7 @@ Requires:	x11-driver-video-tdfx
 Requires:	x11-driver-video-trident
 Requires:	x11-driver-video-v4l
 Requires:	x11-driver-video-vesa
-Requires:	x11-driver-video-vmware
+#Requires:	x11-driver-video-vmware
 
 %description
 X11 video drivers metapackage. This package contains no files, but
