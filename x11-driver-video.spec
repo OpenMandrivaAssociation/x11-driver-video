@@ -6,7 +6,7 @@
 
 Name:		x11-driver-video
 Version:	1.0.0
-Release:	47
+Release:	48
 Summary:	X11 video drivers
 Group:		System/X11
 License:	MIT
@@ -27,7 +27,9 @@ Requires:	x11-driver-video-mach64
 Requires:	x11-driver-video-mga
 Requires:	x11-driver-video-neomagic
 Requires:	x11-driver-video-nv
+%ifnarch %armx
 Requires:	x11-driver-video-openchrome
+%endif
 Requires:	x11-driver-video-r128
 Requires:	x11-driver-video-s3
 Requires:	x11-driver-video-s3virge
