@@ -6,27 +6,24 @@
 
 Name:		x11-driver-video
 Version:	1.0.0
-Release:	50
+Release:	51
 Summary:	X11 video drivers
 Group:		System/X11
 License:	MIT
 
-Requires:	x11-driver-video-ati
+
 # useful for qemu
 Requires:	x11-driver-video-cirrus
 Requires:	x11-driver-video-fbdev
 Requires:	x11-driver-video-glint
-%ifarch %{ix86}
-Requires:	x11-driver-video-geode
-%endif
 %ifnarch %{sunsparc} %{arm}
+Requires:	x11-driver-video-ati
 Requires:	x11-driver-video-intel
 Requires:	x11-driver-video-nouveau
 %endif
 Requires:	x11-driver-video-mach64
 Requires:	x11-driver-video-mga
 Requires:	x11-driver-video-neomagic
-Requires:	x11-driver-video-nv
 %ifnarch %armx
 Requires:	x11-driver-video-openchrome
 %endif
