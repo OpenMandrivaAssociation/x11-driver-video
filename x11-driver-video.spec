@@ -6,7 +6,7 @@
 
 Name:		x11-driver-video
 Version:	1.0.0
-Release:	51
+Release:	52
 Summary:	X11 video drivers
 Group:		System/X11
 License:	MIT
@@ -16,15 +16,16 @@ License:	MIT
 Requires:	x11-driver-video-cirrus
 Requires:	x11-driver-video-fbdev
 Requires:	x11-driver-video-glint
-%ifnarch %{sunsparc} %{arm}
+%ifnarch %{sparcx} %{arm}
 Requires:	x11-driver-video-ati
 Requires:	x11-driver-video-intel
 Requires:	x11-driver-video-nouveau
 %endif
-Requires:	x11-driver-video-mach64
+# deprecated due of lack of KMS syooirt and no support planned either
+Obsoletes:	x11-driver-video-mach64
 Requires:	x11-driver-video-mga
 Requires:	x11-driver-video-neomagic
-%ifnarch %armx
+%ifnarch %{armx}
 Requires:	x11-driver-video-openchrome
 %endif
 Requires:	x11-driver-video-r128
