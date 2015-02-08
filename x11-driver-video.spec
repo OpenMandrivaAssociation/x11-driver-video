@@ -1,12 +1,12 @@
 #
 # Needs more fixes, maybe remove all drivers for non agp/pci cards
-# sunsparc arch may need more drivers removed, or even better, only
+# %{sparcx} arch may need more drivers removed, or even better, only
 # install sun hardware drivers
 #
 
 Name:		x11-driver-video
 Version:	1.0.0
-Release:	52
+Release:	53
 Summary:	X11 video drivers
 Group:		System/X11
 License:	MIT
@@ -28,7 +28,7 @@ Requires:	x11-driver-video-neomagic
 %ifnarch %{armx}
 Requires:	x11-driver-video-openchrome
 %endif
-Requires:	x11-driver-video-r128
+Obsoletes:	x11-driver-video-r128
 Requires:	x11-driver-video-s3
 Requires:	x11-driver-video-s3virge
 Requires:	x11-driver-video-savage
