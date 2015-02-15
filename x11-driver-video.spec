@@ -30,7 +30,7 @@ Requires:	x11-driver-video-openchrome
 %endif
 Obsoletes:	x11-driver-video-r128
 Requires:	x11-driver-video-s3
-Requires:	x11-driver-video-s3virge
+Obsoletes:	x11-driver-video-s3virge
 Requires:	x11-driver-video-savage
 Requires:	x11-driver-video-sis
 #Not supported by Xorg 13
