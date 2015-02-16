@@ -15,7 +15,7 @@ License:	MIT
 # useful for qemu
 Requires:	x11-driver-video-cirrus
 Requires:	x11-driver-video-fbdev
-Obsolete:	x11-driver-video-glint
+Obsoletes:	x11-driver-video-glint
 %ifnarch %{sparcx} %{arm}
 Requires:	x11-driver-video-ati
 Requires:	x11-driver-video-intel
