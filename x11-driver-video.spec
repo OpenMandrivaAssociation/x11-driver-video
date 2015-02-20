@@ -16,6 +16,7 @@ License:	MIT
 Requires:	x11-driver-video-cirrus
 Requires:	x11-driver-video-fbdev
 Obsoletes:	x11-driver-video-glint
+Obsoletes:	x11-driver-video-geode
 %ifnarch %{sparcx} %{arm}
 Requires:	x11-driver-video-ati
 Requires:	x11-driver-video-intel
