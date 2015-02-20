@@ -76,7 +76,7 @@ Suggests:	x11-driver-video-i740
 # Not supported by Xorg 13
 #Suggests:	x11-driver-video-newport
 
-Suggests:	x11-driver-video-rendition
+Obsoletes:	x11-driver-video-rendition
 Suggests:	x11-driver-video-siliconmotion
 
 # DEC Tga - too uncommon to be installed by default
