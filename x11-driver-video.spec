@@ -6,7 +6,7 @@
 
 Name:		x11-driver-video
 Version:	1.0.0
-Release:	56
+Release:	57
 Summary:	X11 video drivers
 Group:		System/X11
 License:	MIT
@@ -18,6 +18,7 @@ Requires:	x11-driver-video-fbdev
 Obsoletes:	x11-driver-video-glint
 Obsoletes:	x11-driver-video-geode
 %ifnarch %{sparcx} %{arm}
+Requires:	x11-driver-video-amdgpu
 Requires:	x11-driver-video-ati
 Requires:	x11-driver-video-intel
 Requires:	x11-driver-video-nouveau
