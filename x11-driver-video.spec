@@ -6,7 +6,7 @@
 
 Name:		x11-driver-video
 Version:	1.0.0
-Release:	57
+Release:	58
 Summary:	X11 video drivers
 Group:		System/X11
 License:	MIT
@@ -17,11 +17,9 @@ Requires:	x11-driver-video-cirrus
 Requires:	x11-driver-video-fbdev
 Obsoletes:	x11-driver-video-glint
 Obsoletes:	x11-driver-video-geode
-%ifnarch %{sparcx} %{arm}
+%ifnarch %{armx}
 Requires:	x11-driver-video-amdgpu
 Requires:	x11-driver-video-ati
-Requires:	x11-driver-video-intel
-Requires:	x11-driver-video-nouveau
 %endif
 # deprecated due of lack of KMS syooirt and no support planned either
 Obsoletes:	x11-driver-video-mach64
@@ -30,6 +28,7 @@ Requires:	x11-driver-video-neomagic
 %ifnarch %{armx}
 Requires:	x11-driver-video-openchrome
 %endif
+Requires:	x11-driver-video-qxl
 Obsoletes:	x11-driver-video-r128
 Requires:	x11-driver-video-s3
 Obsoletes:	x11-driver-video-s3virge
@@ -38,15 +37,6 @@ Requires:	x11-driver-video-sis
 #Not supported by Xorg 13
 #Requires:	x11-driver-video-sisimedia
 Requires:	x11-driver-video-sisusb
-%ifarch %{sunsparc}
-Requires:	x11-driver-video-sunbw2
-Requires:	x11-driver-video-suncg14
-Requires:	x11-driver-video-suncg3
-Requires:	x11-driver-video-suncg6
-Requires:	x11-driver-video-sunffb
-Requires:	x11-driver-video-sunleo
-Requires:	x11-driver-video-suntcx
-%endif
 Requires:	x11-driver-video-tdfx
 Requires:	x11-driver-video-trident
 Obsoletes:	x11-driver-video-v4l
@@ -58,7 +48,6 @@ X11 video drivers metapackage. This package contains no files, but
 depends on most common free X.org video drivers.
 
 %files
-
 
 %package uncommon
 Summary:	Uncommon X11 video drivers
@@ -89,9 +78,10 @@ Suggests:	x11-driver-video-tseng
 Suggests:	x11-driver-video-voodoo
 
 # Stuff in contrib or recent drivers that nobody might be using:
+%ifnarch %{armx}
 #Requires:	x11-driver-video-xgi
 Suggests:	x11-driver-video-xgixp
-Suggests:	x11-driver-video-qxl
+%endif
 
 %description uncommon
 X11 video drivers metapackage. This package contains no files, but
