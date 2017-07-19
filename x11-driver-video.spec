@@ -6,7 +6,7 @@
 
 Name:		x11-driver-video
 Version:	1.0.0
-Release:	58
+Release:	59
 Summary:	X11 video drivers
 Group:		System/X11
 License:	MIT
@@ -21,27 +21,29 @@ Obsoletes:	x11-driver-video-geode
 Requires:	x11-driver-video-amdgpu
 Requires:	x11-driver-video-ati
 %endif
-# deprecated due of lack of KMS syooirt and no support planned either
+# deprecated due of lack of KMS support and no support planned either
 Obsoletes:	x11-driver-video-mach64
 Requires:	x11-driver-video-mga
 Requires:	x11-driver-video-neomagic
 %ifnarch %{armx}
 Requires:	x11-driver-video-openchrome
 %endif
-Requires:	x11-driver-video-qxl
+Suggests:	x11-driver-video-qxl
 Obsoletes:	x11-driver-video-r128
-Requires:	x11-driver-video-s3
+Suggests:	x11-driver-video-s3
 Obsoletes:	x11-driver-video-s3virge
-Requires:	x11-driver-video-savage
+Suggests:	x11-driver-video-savage
 Requires:	x11-driver-video-sis
 #Not supported by Xorg 13
 #Requires:	x11-driver-video-sisimedia
 Requires:	x11-driver-video-sisusb
-Requires:	x11-driver-video-tdfx
-Requires:	x11-driver-video-trident
+Suggests:	x11-driver-video-tdfx
+Suggests:	x11-driver-video-trident
 Obsoletes:	x11-driver-video-v4l
 Requires:	x11-driver-video-vesa
+%ifarch %{ix86} x86_64
 Requires:	x11-driver-video-vmware
+%endif
 
 %description
 X11 video drivers metapackage. This package contains no files, but
