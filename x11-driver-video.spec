@@ -6,7 +6,7 @@
 
 Name:		x11-driver-video
 Version:	1.0.0
-Release:	60
+Release:	61
 Summary:	X11 video drivers
 Group:		System/X11
 License:	MIT
@@ -41,7 +41,7 @@ Suggests:	x11-driver-video-tdfx
 Suggests:	x11-driver-video-trident
 Obsoletes:	x11-driver-video-v4l
 Requires:	x11-driver-video-vesa
-%ifarch %{ix86} x86_64 znver1
+%ifarch %{ix86} %{x86_64}
 Requires:	x11-driver-video-vmware
 %endif
 
