@@ -6,44 +6,39 @@
 
 Name:		x11-driver-video
 Version:	1.0.0
-Release:	62
+Release:	63
 Summary:	X11 video drivers
 Group:		System/X11
 License:	MIT
 
+Requires:	x11-driver-video-vesa
+Requires:	x11-driver-video-fbdev
 
+%ifarch %{ix86} %{x86_64}
 # useful for qemu
 Requires:	x11-driver-video-cirrus
-Requires:	x11-driver-video-fbdev
-Obsoletes:	x11-driver-video-glint
-Obsoletes:	x11-driver-video-geode
-%ifnarch %{armx}
 Requires:	x11-driver-video-amdgpu
 Requires:	x11-driver-video-ati
-%endif
-# deprecated due of lack of KMS support and no support planned either
-Obsoletes:	x11-driver-video-mach64
 Requires:	x11-driver-video-mga
 Requires:	x11-driver-video-neomagic
-%ifnarch %{armx}
 Requires:	x11-driver-video-openchrome
-%endif
 Suggests:	x11-driver-video-qxl
-Obsoletes:	x11-driver-video-r128
 Suggests:	x11-driver-video-s3
-Obsoletes:	x11-driver-video-s3virge
 Suggests:	x11-driver-video-savage
 Requires:	x11-driver-video-sis
-#Not supported by Xorg 13
-#Requires:	x11-driver-video-sisimedia
 Requires:	x11-driver-video-sisusb
 Suggests:	x11-driver-video-tdfx
 Suggests:	x11-driver-video-trident
-Obsoletes:	x11-driver-video-v4l
-Requires:	x11-driver-video-vesa
-%ifarch %{ix86} %{x86_64}
 Requires:	x11-driver-video-vmware
 %endif
+
+# deprecated due of lack of KMS support and no support planned either
+Obsoletes:	x11-driver-video-mach64
+Obsoletes:	x11-driver-video-r128
+Obsoletes:	x11-driver-video-s3virge
+Obsoletes:	x11-driver-video-v4l
+Obsoletes:	x11-driver-video-glint
+Obsoletes:	x11-driver-video-geode
 
 %description
 X11 video drivers metapackage. This package contains no files, but
@@ -55,6 +50,7 @@ depends on most common free X.org video drivers.
 Summary:	Uncommon X11 video drivers
 Group:		System/X11
 License:	MIT
+
 Suggests:	x11-driver-video-apm
 Suggests:	x11-driver-video-ark
 Suggests:	x11-driver-video-chips
@@ -64,10 +60,6 @@ Suggests:	x11-driver-video-dummy
 
 Suggests:	x11-driver-video-i128
 Suggests:	x11-driver-video-i740
-
-# SGI newport - too uncommon to be installed by default
-# Not supported by Xorg 13
-#Suggests:	x11-driver-video-newport
 
 Obsoletes:	x11-driver-video-rendition
 Suggests:	x11-driver-video-siliconmotion
@@ -81,7 +73,6 @@ Suggests:	x11-driver-video-voodoo
 
 # Stuff in contrib or recent drivers that nobody might be using:
 %ifnarch %{armx}
-#Requires:	x11-driver-video-xgi
 Suggests:	x11-driver-video-xgixp
 %endif
 
