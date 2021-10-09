@@ -6,19 +6,19 @@
 
 Name:		x11-driver-video
 Version:	1.0.0
-Release:	63
+Release:	64
 Summary:	X11 video drivers
 Group:		System/X11
 License:	MIT
 
-Requires:	x11-driver-video-vesa
-Requires:	x11-driver-video-fbdev
+Requires:	x11-driver-video-amdgpu
+Requires:	x11-driver-video-nouveau
 
 %ifarch %{ix86} %{x86_64}
 # useful for qemu
 Requires:	x11-driver-video-cirrus
-Requires:	x11-driver-video-amdgpu
 Requires:	x11-driver-video-ati
+Requires:	x11-driver-video-fbdev
 Requires:	x11-driver-video-mga
 Requires:	x11-driver-video-neomagic
 Requires:	x11-driver-video-openchrome
@@ -26,10 +26,9 @@ Suggests:	x11-driver-video-qxl
 Suggests:	x11-driver-video-s3
 Suggests:	x11-driver-video-savage
 Requires:	x11-driver-video-sis
-Requires:	x11-driver-video-sisusb
 Suggests:	x11-driver-video-tdfx
-Suggests:	x11-driver-video-trident
 Requires:	x11-driver-video-vmware
+Requires:	x11-driver-video-vesa
 %endif
 
 # deprecated due of lack of KMS support and no support planned either
